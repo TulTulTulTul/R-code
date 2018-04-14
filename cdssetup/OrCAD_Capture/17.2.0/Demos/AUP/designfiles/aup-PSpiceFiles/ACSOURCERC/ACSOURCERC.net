@@ -1,0 +1,5 @@
+* source ANALYSESUSINGPSPICE
+V_V1         N00475 0  
++SIN 0V 1V 1K 0 0 0
+C_C1         0 N00484  1u IC=0V TC=0,0 
+R_R1         N00475 N00484  100 TC=0,0 

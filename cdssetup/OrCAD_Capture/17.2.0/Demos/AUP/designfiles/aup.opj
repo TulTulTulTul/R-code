@@ -1,0 +1,125 @@
+(ExpressProject "AnalysesUsingPSpice"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\aup.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\aup.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\aup-PSpiceFiles\AC_ANALYSIS\AC_ANALYSIS.net"
+      (Type "Report")
+      (DisplayName ".\aup-PSpiceFiles\AC_ANALYSIS\AC_ANALYSIS.net"))
+    (File ".\aup-PSpiceFiles\SWITCHEDRLC\SWITCHEDRLC.net"
+      (Type "Report")
+      (DisplayName ".\aup-PSpiceFiles\SWITCHEDRLC\SWITCHEDRLC.net"))
+    (File ".\aup-PSpiceFiles\SWITCHEDRC\SWITCHEDRC.net"
+      (Type "Report")
+      (DisplayName ".\aup-PSpiceFiles\SWITCHEDRC\SWITCHEDRC.net"))
+    (File ".\aup-PSpiceFiles\ACSOURCERC\ACSOURCERC.net"
+      (Type "Report")
+      (DisplayName ".\aup-PSpiceFiles\ACSOURCERC\ACSOURCERC.net"))
+    (File ".\aup-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName ".\aup-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\switchedrlc\trans.sim"
+        (DisplayName "SWITCHEDRLC-Trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\acsourcerc\trans1.sim"
+        (DisplayName "ACSOURCERC-Trans1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\switchedrc\trans1.sim"
+        (DisplayName "SWITCHEDRC-Trans1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\ac_analysis\ac.sim"
+        (DisplayName "AC_ANALYSIS-AC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\schematic1\trans.sim"
+        (DisplayName "SCHEMATIC1-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\acsourcerc\trans.sim"
+        (DisplayName "ACSOURCERC-Trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\ac_analysis\ac_noise.sim"
+        (DisplayName "AC_ANALYSIS-ac_noise")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\ac_analysis\ac1.sim"
+        (DisplayName "AC_ANALYSIS-AC1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\ac_analysis\ac_octave.sim"
+        (DisplayName "AC_ANALYSIS-AC_Octave")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\switchedrc\trans.sim"
+        (DisplayName "SWITCHEDRC-Trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aup-pspicefiles\ac_analysis\ac2.sim"
+        (DisplayName "AC_ANALYSIS-AC2")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\aup-pspicefiles\ac_analysis\ac_octave.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "AC_ANALYSIS")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "AC_RLC")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "ACSOURCERC")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "CAPDISCH")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "SWITCHEDRC")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "SWITCHEDRLC")
+      (Path "Design Resources"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup.DSN"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Simulation Profiles"
+         "C:\Users\accmnet_lock\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture\17.2.0\Demos\AUP\designfiles\aup-pspicefiles\switchedrc\trans.sim"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 369"))
+      (Tab 0)))
+  (MPSSessionName "accmnet_lock"))

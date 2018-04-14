@@ -1,0 +1,14 @@
+* source ANALYSESUSINGPSPICE
+R_R1         N00633 N03617  470 TC=0,0 
+R_R2         N00137 N00146  2k TC=0,0 
+X_U3         N03090 N05637 Sw_tClose PARAMS: tClose=5m ttran=1u Rclosed=0.01
++  Ropen=1G
+C_C1         N05637 N00137  1u IC=0V TC=0,0 
+X_U1         N00245 N00633 Sw_tClose PARAMS: tClose=1m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_U2         N03617 N03090 Sw_tOpen PARAMS: tOpen=5m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+V_V1         N00245 0 10Vdc
+L_L1         0 N00146  50mH IC=0 
+R_R3         0 N00137  1k TC=0,0 
+C_C2         N00146 N03090  1u IC=0 TC=0,0 

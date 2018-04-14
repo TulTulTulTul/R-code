@@ -1,0 +1,122 @@
+
+**** 08/26/14 12:01:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SWITCHEDRLC-Trans"  [ D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\AnalysesUsi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\nitint\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SWITCHEDRLC.net" 
+
+
+
+**** INCLUDING SWITCHEDRLC.net ****
+* source ANALYSESUSINGPSPICE
+R_R1         N00633 N03617  470 TC=0,0 
+R_R2         N00137 N00146  2k TC=0,0 
+X_U3         N03090 N05637 Sw_tClose PARAMS: tClose=5m ttran=1u Rclosed=0.01
++  Ropen=1G
+C_C1         N05637 N00137  1u IC=0V TC=0,0 
+X_U1         N00245 N00633 Sw_tClose PARAMS: tClose=1m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_U2         N03617 N03090 Sw_tOpen PARAMS: tOpen=5m ttran=1u Rclosed=0.01
++  Ropen=1Meg
+V_V1         N00245 0 10Vdc
+L_L1         0 N00146  50mH IC=0 
+R_R3         0 N00137  1k TC=0,0 
+C_C2         N00146 N03090  1u IC=0 TC=0,0 
+
+**** RESUMING Trans.cir ****
+.END
+
+**** 08/26/14 12:01:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SWITCHEDRLC-Trans"  [ D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\AnalysesUsi
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.Smod       X_U1.Smod       X_U2.Smod       
+         RON     .01             .01             .01         
+        ROFF    1.000000E+09    1.000000E+06    1.000000E+06 
+         VON    1               1               1            
+        VOFF    0               0               0            
+
+
+**** 08/26/14 12:01:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SWITCHEDRLC-Trans"  [ D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\AnalysesUsi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00137)     .0100 (N00146)     .0299 (N00245)   10.0000 (N00633)     .0346     
+
+(N03090)     .0299 (N03617)     .0299 (N05637)     .0100 (X_U1.3)    0.0000     
+
+(X_U2.3)    1.0000 (X_U3.3)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.965E-06
+    X_U3.V1      0.000E+00
+    X_U1.V1      0.000E+00
+    X_U2.V1     -1.000E-12
+
+    TOTAL POWER DISSIPATION   9.97E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/26/14 12:01:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SWITCHEDRLC-Trans"  [ D:\Cadence\SPB_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\AnalysesUsi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

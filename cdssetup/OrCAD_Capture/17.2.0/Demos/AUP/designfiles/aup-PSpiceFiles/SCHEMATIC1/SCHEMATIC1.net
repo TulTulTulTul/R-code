@@ -1,0 +1,4 @@
+* source ANALYSESUSINGPSPICE
+C_C1         0 N00113  1n IC=0 TC=0,0 
+R_R1         N00106 N00113  1k TC=0,0 
+V_V1         N00106 0 5Vdc

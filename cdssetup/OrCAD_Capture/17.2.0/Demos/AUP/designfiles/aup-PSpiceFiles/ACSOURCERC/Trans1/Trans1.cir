@@ -1,0 +1,19 @@
+** Profile: "ACSOURCERC-Trans1"  [ d:\cadence\spb_16.6\tools\capture\tclscripts\caplearningresources\hybrid\supportfiles\analysesusingpspice\analysesusingpspice\designfiles\analysesusingpspice-PSpiceFiles\ACSOURCERC\Trans1.sim ] 
+
+** Creating circuit file "Trans1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\nitint\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 4m 0 4u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ACSOURCERC.net" 
+
+
+.END
