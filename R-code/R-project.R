@@ -100,7 +100,11 @@ scatterplotMatrix(data,spread=FALSE, smoother.args = list(lty=2),diagonal = 'his
 model <- lm(PE~AT+V+AP+RH, data=data)
 summary(model)
 ## Shows that every parameters are significant.
-
+#### Summary analysis
+## All the coefficients are significant
+### Intercept is not significant and not interpretable as all the coefficients are significant
+## All the independent variables in regression model are significant
+## So the intercept has no intrinsic meaning
 
 anova(model)
 ## Sequential Anova Test.
